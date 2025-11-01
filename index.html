@@ -72,28 +72,39 @@
         }
 
         .first {
-            padding: 50px;
+            /* padding: 50px; */
+            padding-top: 100px;
+            padding-bottom: 50px;
             /* background-color: lightblue; */
             width: 60vw;
             display: flex;
             /* justify-content: ;
              
             */
-            /* gap: 10px;
-             */
+            /* gap: 60px; */
+            justify-content: space-evenly;
 
-            /* justify-content: space-between; */
-            
+
+
             flex-direction: row;
             align-items: center;
             margin: auto;
 
         }
 
+        .first .paragraph>p {
+            width: 100%;
+            /* font-size: ; */
+        }
+
         .first>div>img {
             border-radius: 30px;
-            height: 305px;
-            padding: 20px;
+            height: 310px;
+            margin-right: 20px;
+
+            /* padding-left: 30px; */
+            /* box-sizing: content-box; */
+            /* padding-left: 10px; */
         }
 
         p {
@@ -113,15 +124,51 @@
         .header {
             display: inline;
         }
+        .famousdino>h2{
 
+            background-color: rgb(24, 26, 27);
+            /* display: inline; */
+            width: fit-content;
+            padding: 15px;
+            font-size: 25px;
+            border-radius: 10px;
+        }
         .header>h2 {
             background-color: rgb(24, 26, 27);
             /* display: inline; */
             width: fit-content;
-            padding: 20px;
-            border-top-right-radius: 30px;
-            border-top-left-radius: 30px;
+            padding: 15px;
+            font-size: 25px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
 
+        }
+        .wadboxcontainer{
+            margin-top: 32px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .wadbox{
+            background-color: rgb(47,38,0);
+            padding: 16px;
+            border: 2px solid rgb(0,122,85);
+            border-radius: 10px;
+
+        }
+        .content{
+            padding: 32px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+        .content>p{
+            font-size: 18px;
+        }
+        .wadbox >h3{
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -146,11 +193,11 @@
     </header>
     <main>
         <div class="first">
-            <div >
+            <div>
                 <img src="https://images.unsplash.com/photo-1709625088058-8f92d6d4621b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaW5vc2F1ciUyMHNrZWxldG9uJTIwbXVzZXVtfGVufDF8fHx8MTc2MTk5ODE3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                     alt="Dinosaur fossil image">
             </div>
-            <div >
+            <div class="paragraph">
                 <p>Dinosaurs roamed the Earth for over 165 million years during the Mesozoic Era, leaving behind
                     incredible
                     fossils that help us understand their world.
@@ -168,6 +215,10 @@
                     Allosaurus
                     stalked the landscape. The Cretaceous period introduced some of the most famous dinosaurs, including
                     Tyrannosaurus rex, Triceratops, and fast, intelligent raptors.</p>
+                <p>Fossil discoveries have shown that dinosaurs were far more diverse than once believed. Some were
+                    enormous plant-eaters weighing as much as 70 tons, while others were small, agile hunters the size
+                    of chickens. Many dinosaurs had feathers, bright colors, and complex social behaviors—features we
+                    now recognize in their closest living relatives: birds.</p>
             </div>
         </div>
         <div class="contentcontainer">
@@ -180,29 +231,29 @@
                     species went extinct about 66 million years ago.
                 </p>
                 <p>
-
                     These magnificent creatures ranged from the massive long-necked sauropods like Brachiosaurus to the
                     fearsome predators like Tyrannosaurus rex, and even small, feathered dinosaurs that would eventually
                     evolve into modern birds.</p>
 
-                <div>
+                <div class="wadboxcontainer">
+                <div class="wadbox">
                     <h3>Triassic Period</h3>
                     <span>252-201 million years ago</span>
                 </div>
 
-                <div>
+                <div class="wadbox">
                     <h3>Jurassic Period</h3>
                     <span>201-145 million years ago</span>
                 </div>
 
-                <div>
+                <div class="wadbox">
                     <h3>Cretaceous Period</h3>
                     <span>145-66 million years ago</span>
                 </div>
-
+                </div>
             </div>
         </div>
-        <div>
+        <div class="header famousdino">
             <h2>Famous Dinosaurs</h2>
         </div>
         <div>
